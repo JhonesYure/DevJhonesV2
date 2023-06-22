@@ -1,0 +1,10 @@
+.txt-header{
+  color: #fff;
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 5%;
+  margin-right: 10%;
+}
+.txt-header:hover{
+    color: #219EBC;
+}
