@@ -45,7 +45,9 @@ export default function Homepage()
                                     </p>
                                 </div>
                                 <div className="button">
+                                    <a href='#contato'>
                                     <button className='botao'>Contate-me</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>

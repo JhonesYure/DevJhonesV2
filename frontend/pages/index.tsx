@@ -7,6 +7,9 @@ import Sobre from './Sobre'
 import Contador from './Contador'
 import Skills from './Skills'
 import Projetos from './Projetos'
+import MeuTrabalho from './MeuTrabakho'
+import Contato from './Contato'
+import Footer from './Footer'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -33,6 +36,12 @@ export default function Home() {
         <Skills/>
 
         <Projetos/>
+
+        <MeuTrabalho/>
+
+        <Contato/>
+
+        <Footer/>
 
       </main>
 

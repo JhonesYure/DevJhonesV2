@@ -17,7 +17,7 @@ export default function Header()
         <div className="row">
 
           <div className="col-md-8 col-2">
-            <a href="">
+            <a href="https://www.instagram.com/jhonesyure/" target="blank">
               <img src="/instablack.png" alt="" className="insta" />
             </a>
           </div>
@@ -25,7 +25,7 @@ export default function Header()
           <div className="col-md-2 col-2">
             <div className='line'>
               <img src="./telefone.png" alt="" className="tel" />
-              <p className="numero">(51) 994 119 063</p>
+              <p className="numero">+55 51 994 119 063</p>
             </div>
           </div>
 

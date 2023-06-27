@@ -11,24 +11,28 @@ export default function Projetos() {
   return (
     <>
       <main>
-        <section id="projetos">
+        <section id="portfolio">
           <div className="container">
             <div className="row">
               <div className="col-md-12">
                 <h1 className="title">Principais Projetos</h1>
               </div>
 
-              <div className="">
-                <Carousel
+              <div className="car">
+              <Carousel
                   showThumbs={false}
                   showStatus={false}
-                  infiniteLoop
-                  emulateTouch
-                  swipeable
+                  infiniteLoop={true}
+                  emulateTouch={true}
+                  swipeable={true}
                   showArrows={false}
                   showIndicators={false}
-                  centerMode
+                  centerMode={true}
                   centerSlidePercentage={33.33}
+                  axis="horizontal"
+                  interval={3000}
+                  onClickItem={() => {}}
+                  onClickThumb={() => {}}
                   renderArrowPrev={() => <></>}
                   renderArrowNext={() => <></>}
                 >
@@ -48,7 +52,8 @@ export default function Projetos() {
                    <strong> PHP, HTML, CSS,JavaScript, MySQL, Figma</strong>
                     </p>
                     <div className="cent">
-                    <button className='botao'>Visite o site</button>
+                    {/* <button className='botao'>Visite o site</button> */}
+                    <a href="https://starcodedigital.com.br/" className="botao">Visite o site</a>
                     </div>
                   </div>
 
@@ -67,7 +72,8 @@ export default function Projetos() {
                    <strong> ReactJs, HTML, CSS, JavaScript, NextJs, AWS, Figma </strong>
                     </p>
                     <div className="cent">
-                    <button className='botao'>Visite o site</button>
+                    {/* <button className='botao'>Visite o site</button> */}
+                    <a href="https://vent.digital/" className="botao">Visite o site</a>
                     </div>
                   </div>
 
@@ -86,7 +92,8 @@ export default function Projetos() {
                    <strong> React Native, C#, MVC, MySQL, Frameworks, Figma</strong>
                     </p>
                     <div className="cent">
-                    <button className='botao'>Visite</button>
+                    {/* <button className='botao'>Visite</button> */}
+                    <a href="/seu-link-aqui" className="botao">Visite </a>
                     </div>
                   </div>
 
@@ -105,7 +112,8 @@ export default function Projetos() {
                    <strong>C#, MVC, HTML, CSS, JavaScript, MySQL, Figma</strong>
                     </p>
                     <div className="cent">
-                    <button className='botao'>Visite</button>
+                    {/* <button className='botao'>Visite</button> */}
+                    <a href="/seu-link-aqui" className="botao">Visite </a>
                     </div>
                   </div>
 
@@ -125,7 +133,8 @@ export default function Projetos() {
                    <strong> Expo, JavaScript, SqlLite, Figma</strong>
                     </p>
                     <div className="cent">
-                    <button className='botao'>Visite o site</button>
+                    {/* <button className='botao'>Visite o site</button> */}
+                    <a href="/seu-link-aqui" className="botao">Código</a>
                     </div>
                   </div>
 
@@ -145,7 +154,8 @@ export default function Projetos() {
                    <strong> C#, MVC, HTML, CSS,JavaScript,  Figma</strong>
                     </p>
                     <div className="cent">
-                    <button className='botao'>Visite o site</button>
+                    {/* <button className='botao'>Visite o site</button> */}
+                    <a href="https://estudioaware.com/" className="botao">Visite o site</a>
                     </div>
                   </div>
 
@@ -165,7 +175,8 @@ export default function Projetos() {
                    <strong> C#, MVC, ReactNative, JavaScript, Figma</strong>
                     </p>
                     <div className="cent">
-                    <button className='botao'>Visite</button>
+                    {/* <button className='botao'>Visite</button> */}
+                    <a href="/seu-link-aqui" className="botao">Código</a>
                     </div>
                   </div>
 
@@ -225,12 +236,29 @@ export default function Projetos() {
             margin-bottom: 10%;
             width: 50%; 
             height: 20%;
-            margin-left
+            text-decoration: none;
           }
           .botao:hover {
             cursor: pointer;
             background-color: #FB8500;
             color: #023047;
+          }
+          @media (max-width: 767px){
+            .card {
+              width: 100%; 
+              height: auto; 
+              display: flex;
+              flex-direction: column; 
+              align-items: center;
+            }
+            .car {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .botao {
+              width: 100%;
+            }
           }
         `}
       </style>
